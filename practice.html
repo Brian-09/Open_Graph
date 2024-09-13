@@ -75,6 +75,64 @@ Dates: December 25th 2019 (Christmas Day), November 2nd 2019 (Día de los Muerto
         </pre>
     </code>
 
+    <hr style="height: 5px; background-color: black;">
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>User Name</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user.name">
+        </fieldset>
+
+        <fieldset>
+            <legend>Text Area</legend>
+            <label for="body">Message:</label>
+            <textarea name="user.message" id="body" cols="30" rows="10" disabled></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>File Upload</legend>
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile" accept=".jpg, .jpeg">
+        </fieldset>
+
+        <fieldset>
+            <legend>Checkboxes</legend>
+            <input type="checkbox" id="symptom1" name="symptom1" value="Stroke">
+            <label for="symptom1">Stroke</label><br>
+            <input type="checkbox" id="symptom2" name="symptom2" value="Cough">
+            <label for="symptom2">Cough</label><br>
+            <input type="checkbox" id="symptom3" name="symptom3" value="Cold">
+            <label for="symptom3">Cold</label><br>
+            <input type="checkbox" id="symptom4" name="symptom4" value="Vomiting">
+            <label for="symptom4">Vomiting</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Password</legend>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd">
+        </fieldset>
+
+        <fieldset>
+            <legend>Radio Button</legend>
+            <input type="radio" id="age1" name="age" value="0-12">
+            <label for="age1">0-12</label><br>
+            <input type="radio" id="age2" name="age" value="13-20">
+            <label for="age2">13-20</label><br>
+            <input type="radio" id="age3" name="age" value="21+">
+            <label for="age3">21+</label>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Submit your Work</button>
+        <!-- OR -->
+        <input type="button">This is also a button</input>
+
+        <button type="reset">Reset all</button>
+    </form>
+
     <script>
         var para = document.querySelector('p')
         para.onclick = function(){
