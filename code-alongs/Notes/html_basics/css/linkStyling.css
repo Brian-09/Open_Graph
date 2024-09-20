@@ -1,0 +1,47 @@
+/* These set the colors of each link */
+a[href="https://google.com"] {
+    color: red;
+}
+a[href="https://wikipedia.com"] {
+    color: grey;
+}
+a[href="https://w3schools.com"] {
+    color: limegreen;
+}
+a[href="https://mdn.com"] {
+    color: lightblue;
+}
+a[href="https://github.com"] {
+    color: green;
+}
+
+/* These keep the links as the same colors after being visited */
+a[href="https://google.com"]:visited{
+    color: red;
+}
+a[href="https://wikipedia.com"]:visited {
+    color: grey;
+}
+a[href="https://w3schools.com"]:visited {
+    color: limegreen;
+}
+a[href="https://mdn.com"]:visited {
+    color: lightblue;
+}
+a[href="https://github.com"]:visited {
+    color: green;
+}
+
+/* Sets the first letter as the fantasy font and double the regular font size */
+li::first-letter{
+    font-size: 32px;
+    font-family: fantasy;
+}
+/* Adds ".com" to the end of every link */
+a::after{
+    content: ".com";
+}
+/* Removes the underline of a link when hovering the mouse over it */
+a:hover{
+    text-decoration: none;
+}

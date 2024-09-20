@@ -1,4 +1,4 @@
-/* .header {
+.header {
     font-size: xx-large;
     font-weight: 900;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -58,35 +58,4 @@ h1:hover{
 p::first-letter{
     font-size: larger;
     font-family: fantasy;
-} */
-
-/* empty.html */
-
-a[href="google.com"] {
-    color: red;
-}
-a[href="wikipedia.com"] {
-    color: grey;
-}
-a[href="w3schools.com"] {
-    color: limegreen;
-}
-a[href="mdn.com"] {
-    color: lightblue;
-}
-a[href="github.com"] {
-    color: green;
-}
-
-a::first-letter{
-    font-size: larger;
-}
-a::after{
-    content: ".com";
-}
-a:visited{
-    color: 
-}
-a:hover{
-    text-decoration: none;
 }
