@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: 1fr 80% 1fr 1fr;
+            /* gap: 10px */
+        }
+
+        .container > div{
+            border: 3px double blue;
+        }
+
+        .item-1 {
+            grid-area: header;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+        <div>Item 9</div>
+        <div>Item 10</div>
+        <div>Item 11</div>
+        <div>Item 12</div>
+        <div>Item 13</div>
+        <div>Item 14</div>
+        <div>Item 15</div>
+    </div>
+</body>
+</html>
