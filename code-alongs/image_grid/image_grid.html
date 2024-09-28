@@ -8,27 +8,26 @@
     <style>
         .container {
             display: grid;
-            grid-template-columns: 250px 245px 251px 251px 252px;
-            grid-template-rows: 75px 80px 180px 380px 251px 185px 140px 152px;
-            grid-template-areas:"expression expression expression expression facebook"
-                                "expression expression expression expression twitter"
-                                "expression expression expression expression masks"
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 75px 75px 200px 400px 250px 200px 150px 150px;
+            grid-template-areas:"logo logo logo logo facebook"
+                                "logo logo logo logo twitter"
+                                "logo logo logo logo masks"
                                 "birthday birthday makeup costumes-ages wigs"
                                 "costumes-plays super-sale super-sale candy hats"
                                 "costumes-plays xmas costumes-classic costumes-classic free-shipping"
                                 "props xmas halloween-a halloween-b monsters"
-                                "eye-mask mardi-gras mardi-gras . corner-text";
-            gap: 5px;
-            justify-content: center;
+                                "eye-mask mardi-gras mardi-gras . address";
+            gap: 10px;
         }
 
-        .box {
-            border: 1px solid black;
-            display: flex;
-            justify-content: stretch;
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
         }
 
-        .img-1 {grid-area: expression;}
+        .img-1 {grid-area: logo;}
         .img-2 {grid-area: facebook;}
         .img-3 {grid-area: twitter;}
         .img-4 {grid-area: masks;}
@@ -49,32 +48,60 @@
         .img-19 {grid-area: monsters;}
         .img-20 {grid-area: eye-mask;}
         .img-21 {grid-area: mardi-gras;}
-        .text {grid-area: corner-text; justify-content: right; align-items: bottom;}
+        .text {grid-area: address; align-content: end;}
+
+        p {
+            color: firebrick;
+            justify-content: end;
+            display: flex;
+        }
+        nav {
+            background-color:thistle;
+            height: 50px;
+            align-content: center;
+        }
+        a {
+            color:gray;
+            text-decoration: none;
+            margin-left: 40px;
+        }
+        a:visited {
+            color:gray;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <strong>
+            <a href="./image_grid.html">Enter Site</a>
+            <a href="./image_grid.html">My Account</a>
+            <a href="./image_grid.html">Track Orders</a>
+            <a href="./image_grid.html">Contact Info</a>
+        </strong>
+    </nav>
     <div class="container">
-        <div class=" box img-1"> <img src="./grid_images/expression.png"> </div>
-        <div class=" box img-2"> <img src="./grid_images/facebook.png"> </div>
-        <div class=" box img-3"> <img src="./grid_images/twitter.png"> </div>
-        <div class=" box img-4"> <img src="./grid_images/masks.png"> </div>
-        <div class=" box img-5"> <img src="./grid_images/birthday.png"> </div>
-        <div class=" box img-6"> <img src="./grid_images/makeup.png"> </div>
-        <div class=" box img-7"> <img src="./grid_images/costumes-ages.png"> </div>
-        <div class=" box img-8"> <img src="./grid_images/wigs.png"> </div>
-        <div class=" box img-9"> <img src="./grid_images/costumes-plays.png"> </div>
-        <div class=" box img-10"> <img src="./grid_images/super-sale.png"> </div>
-        <div class=" box img-11"> <img src="./grid_images/candy.png"> </div>
-        <div class=" box img-12"> <img src="./grid_images/hats.png"> </div>
-        <div class=" box img-13"> <img src="./grid_images/props.png" style="width: 250px"> </div>
-        <div class=" box img-14"> <img src="./grid_images/xmas.png" style="width: 245px"> </div>
-        <div class=" box img-15"> <img src="./grid_images/costumes-classic.png"> </div>
-        <div class=" box img-16"> <img src="./grid_images/free-shipping.png"> </div>
-        <div class=" box img-17"> <img src="./grid_images/halloween-a.png"> </div>
-        <div class=" box img-18"> <img src="./grid_images/halloween-b.png"> </div>
-        <div class=" box img-19"> <img src="./grid_images/monsters.png"> </div>
-        <div class=" box img-20"> <img src="./grid_images/eye-mask.png"> </div>
-        <div class=" box img-21"> <img src="./grid_images/mardi-gras.png"> </div>
+        <div class="img-1"> <img src="./grid_images/logo.png"> </div>
+        <div class="img-2"> <img src="./grid_images/facebook.png"> </div>
+        <div class="img-3"> <img src="./grid_images/twitter.png"> </div>
+        <div class="img-4"> <img src="./grid_images/masks.png"> </div>
+        <div class="img-5"> <img src="./grid_images/birthday.png"> </div>
+        <div class="img-6"> <img src="./grid_images/makeup.png"> </div>
+        <div class="img-7"> <img src="./grid_images/costumes-ages.png"> </div>
+        <div class="img-8"> <img src="./grid_images/wigs.png"> </div>
+        <div class="img-9"> <img src="./grid_images/costumes-plays.png"> </div>
+        <div class="img-10"> <img src="./grid_images/super-sale.png"> </div>
+        <div class="img-11"> <img src="./grid_images/candy.png"> </div>
+        <div class="img-12"> <img src="./grid_images/hats.png"> </div>
+        <div class="img-13"> <img src="./grid_images/props.png"> </div>
+        <div class="img-14"> <img src="./grid_images/xmas.png"> </div>
+        <div class="img-15"> <img src="./grid_images/costumes-classic.png"> </div>
+        <div class="img-16"> <img src="./grid_images/free-shipping.png"> </div>
+        <div class="img-17"> <img src="./grid_images/halloween-a.png"> </div>
+        <div class="img-18"> <img src="./grid_images/halloween-b.png"> </div>
+        <div class="img-19"> <img src="./grid_images/monsters.png"> </div>
+        <div class="img-20"> <img src="./grid_images/eye-mask.png"> </div>
+        <div class="img-21"> <img src="./grid_images/mardi-gras.png"> </div>
         <div class="text">
             <p>
                 Costume Expressions<br>
