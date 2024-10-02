@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex is The Best</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: orange;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            height: 500px
+        }
+        .flex-container > div {
+            background-color: black;
+            color: white;
+            margin: 10px;
+            padding: 15px;
+        }
+
+        .box {/*width: 100%;*/ flex-grow: 1;}
+        .box1{order:4;}
+        .box2{order:3;}
+        .box3{order:2;}
+        .box4{order:1;}
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="box">
+            <h1>A</h1>
+        </div>
+        <div class="box" style="flex-basis: 300px; flex-grow: 3;">
+            <h1>B</h1>
+        </div>
+        <div class="box" style="flex-grow: 2; flex-shrink: 1;">
+            <h1>C</h1>
+        </div>
+        <div class="box">
+            <h1>D</h1>
+        </div>
+
+        <!-- <div class="box1">
+            <img src="./images/unnamed.jpg" width="150" alt="squares">
+        </div>
+        <div class="box2">
+            <img src="./images/skateboard.webp" width="100" alt="skateboard dude">
+        </div>
+        <div class="box3">
+            <img src="./images/360_F_343279484_g75KaKCZtj8bGEYGbOUM3ybYc6t1WB12.jpg" width="250" alt="electric eel">
+        </div>
+        <div class="box4">
+            <img src="./images/skateboard.webp" width="100" alt="skateboard dude">
+        </div> -->
+    </div>
+</body>
+</html>
