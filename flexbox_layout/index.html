@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/skateboard.webp" type="image/x-icon">
+    <title>Flexbox Website</title>
+
+    <style>
+        html {
+            background-color: firebrick;
+        }
+
+        .flex-container {
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding: 5px;
+        }
+
+        header {
+            margin: 5px;
+            display: flex;
+        }
+        nav {
+            border: 2px solid black;
+            margin: 5px;
+            background-color: darkgray;
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        nav > a {font-size: 24px;}
+        main {
+            border: 2px solid black;
+            margin: 5px;
+            display: flex; 
+            flex-direction: row;
+        }
+        section {
+            border: 2px solid black;
+            margin: 5px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            flex-basis: 80%;
+        }
+        aside {
+            border: 2px solid black;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-basis: 20%;
+        }
+        footer {
+            margin: 5px;
+            display: flex;
+            width: 50%;
+            justify-content: space-evenly;
+        }
+        footer > p > a {font-size: 5%;}
+        li {margin-top: 10px;}
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <header>
+            <img src="./images/skateboard.webp" width="75px" alt="skateboard dude">
+            <h1>Cool Website</h1>
+        </header>
+    
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Info</a>
+            <a href="#">Media</a>
+            <a href="#">Help</a>
+        </nav>
+
+        <main>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cum quia beatae dignissimos molestiae recusandae sunt necessitatibus facilis eligendi in sit aliquid repudiandae voluptatum asperiores tempore, itaque officia unde laborum id, perspiciatis fugiat nemo accusantium nesciunt? Et tenetur laboriosam iusto voluptatem reiciendis consequatur neque sequi dolores nulla tempore nesciunt ipsam facilis facere, quam esse hic fugiat. Doloribus nihil nostrum id adipisci provident. Totam sapiente nesciunt animi repudiandae sequi, culpa soluta atque illo corrupti modi, rerum deserunt quia voluptatum magni autem iure quidem laudantium, provident ratione! Quis, similique dolorum! Nihil laboriosam ducimus animi consequatur mollitia quo repellendus doloribus accusamus nostrum dolor omnis aliquam qui a, autem vitae error distinctio deserunt, perferendis, blanditiis alias asperiores sequi? Expedita, voluptatum tenetur non, quod dolore reprehenderit odit dolor, aliquid commodi assumenda ab voluptas eveniet quam. Velit magni rem repellendus odio incidunt quam nulla. Neque explicabo incidunt beatae, modi consequuntur laboriosam illum aliquam laudantium, aperiam odio aspernatur! Id, voluptatibus ducimus saepe accusantium voluptatum labore et quod? Nulla quos similique earum beatae, eveniet mollitia dolor eaque laborum quidem! Cumque quia nobis velit accusantium impedit, veritatis autem nisi eos qui consectetur in nihil esse numquam voluptatem recusandae voluptatum quisquam hic iusto ipsa adipisci dicta error animi. Fugit, commodi!</p>
+                <blockquote>
+                    <em>"You know what would be cool? If somebody somewhere quotes this exact statement I'm making right now, along with the last one."</em>
+                    <br>- Some random guy
+                </blockquote>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, explicabo maiores quia voluptate deleniti aut soluta iusto ab ipsa incidunt debitis. At voluptas assumenda debitis dolore maxime voluptate esse quas quae, aperiam, vel omnis harum error quia sapiente recusandae officia perspiciatis voluptatibus magni reprehenderit totam. Perferendis dolore incidunt molestias ab maxime laudantium, optio, pariatur soluta tempore quaerat iure quo nesciunt debitis. Illum mollitia eaque, est, culpa maiores vel labore libero explicabo consectetur, esse aperiam nulla omnis. Fugiat, quos? Sequi obcaecati numquam voluptates! Facere sunt ratione odit necessitatibus, cupiditate, est doloribus quis voluptates, adipisci a ea molestiae nemo nesciunt voluptate eius.</p>
+                <img src="./images/Surprised.png"  width="25%" alt="Surprised Emoji">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea magnam at corporis quidem libero earum quasi facilis neque placeat consectetur similique perspiciatis minima necessitatibus atque, commodi est porro ipsum? Repudiandae commodi eligendi eaque distinctio ratione id dolores reiciendis harum error ab temporibus nemo, explicabo quisquam, recusandae ipsam tempore amet maiores sunt necessitatibus! Magnam harum eos vel culpa error odio similique vero dignissimos numquam blanditiis ducimus consequuntur quasi autem sapiente pariatur laborum provident repellat corrupti placeat omnis, asperiores, deleniti optio ipsa? Alias ipsam cumque saepe aperiam, provident, error vel rerum voluptates incidunt aliquid dolor hic porro exercitationem maiores quod ipsum! Velit amet asperiores tempora nisi incidunt, earum fuga sed, recusandae natus magnam excepturi deleniti, facere suscipit perferendis beatae. Quasi hic veniam iure, fuga deleniti veritatis consequatur illo ducimus pariatur exercitationem debitis natus voluptas. Nulla, pariatur neque minima incidunt hic, quaerat iusto obcaecati voluptas asperiores nemo, quibusdam laboriosam quo. Error, omnis molestias?</p>
+            </section>
+
+            <aside>
+                <p>
+                    Related Link:<br>
+                    <ul>
+                        <li> <a href="#">Cool Article</a> </li>
+                        <li> <a href="#">How to Skateboard</a> </li>
+                        <li> <a href="#">Lorem Simulation</a> </li>
+                        <li> <a href="#">Cool Article: The Sequel</a> </li>
+                    </ul>
+                </p>
+                <img src="./images/squares.jpg" width="100%" alt="squares">
+            </aside>
+        </main>
+
+        <footer>
+            <h2>Socials:</h2>
+            <a href="#">
+                <img src="./images/Youtube_icon.webp" width="50px" alt="Youtube logo">
+            </a>
+            <a href="#">
+                <img src="./images/Instagram_icon.png" width="50px" alt="Instagram logo">
+            </a>
+            <p>
+                Email: <a href="mailto:random.guy@example.com">random.guy@example.com</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
