@@ -1,0 +1,15 @@
+/* Set the container width & border in order to set the point where each line of text ends and goes to the next line */
+.container {
+    width: 350px;
+    border: 3px solid gray;
+}
+/* The class is styled so the target div will be turned into a box that's positioned to the top right of the text & overlaps it */
+.target {
+    background-color: rgb(207,232,220);
+    border-radius: 5px;
+    width: 104px;
+    height: 98px;
+    position: fixed;
+    top: 10px;
+    left: 257px;
+}

@@ -1,0 +1,24 @@
+/* Set the container size & border in order to set the point where each line of text ends and goes to the next line */
+.container {
+    width: 350px;
+    height: 195.2px;
+    border: 3px solid gray;
+}
+/* Creates & styles the sidebar box. It also makes it stay in the same spot as you scroll */
+.sidebar {
+    background-color: rgb(207,232,220);
+    width: 90px;
+    height: 150px;
+    position: relative;
+    top: -10px;
+    left: 5px;
+}
+/* Sets the size of the content section and its position. It also creates a scroll function to see everything that overflows */
+.content {
+    width: 245px;
+    height: 195.2px;
+    position: relative;
+    top: -166px;
+    left: 105px;
+    overflow: auto;
+}
