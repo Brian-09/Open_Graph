@@ -99,10 +99,82 @@ function addNum(x,y){
     console.log(x+y)
 }
 addNum(num1,num2)
-*/
 
 let newName = "Josh"
 function name (namePar){
     console.log(namePar + " needs to go outside")
 }
 name(newName)
+
+
+let test6 = "Bored"
+let test5 = "bored"
+
+console.log(Object.is(test6, test5))
+*/
+
+let value = 4
+
+if (value == 4) {
+    console.log("this is true")
+}
+if (value == 6) {
+    console.log("wow")
+} else {
+    console.log("This is false")
+}
+
+if(value > 3) console.log("Woah, that is pretty cool");
+
+let age = 21
+let canDrink = (age >= 21) ? true : false;
+console.log(canDrink);
+
+let a = 1
+let b = 2
+let result = (a + b < 4) ? "Below" : "Over";
+console.log(result);
+
+let grade = 87
+if (grade > 90) {
+    letterGrade = 'A'
+} else if (grade > 80) {
+    letterGrade = 'B'
+} else if (grade > 70) {
+    letterGrade = 'C'
+} else if (grade > 60) {
+    letterGrade = 'D'
+} else {
+    letterGrade = 'F'
+}
+console.log(letterGrade)
+
+
+let answer = "left";
+switch (answer) {
+    case "left":
+        console.log("You're going left");
+        // break;
+    case "right":
+        console.log("You're going right");
+        break;
+    default:
+        console.log("You're going forward");
+}
+
+let message;
+let login = "Director"
+switch (login) {
+    case "Employee":
+        message = "Hello";
+        break;
+    case "Director":
+        message = "Greetings";
+        break;
+    case "":
+        message = "No login";
+        break;
+    default:
+        message = "";
+}
+console.log(message);
