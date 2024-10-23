@@ -111,7 +111,6 @@ let test6 = "Bored"
 let test5 = "bored"
 
 console.log(Object.is(test6, test5))
-*/
 
 let value = 4
 
@@ -178,3 +177,70 @@ switch (login) {
         message = "";
 }
 console.log(message);
+*/
+
+
+let pen = true;
+let paper = false;
+let mouse = true;
+let keyboard = true;
+if (pen && paper || mouse && keyboard) {
+    console.log("You can take notes");
+}
+
+let stayedUpLate = false;
+let tooMuchGaming = false;
+let skippedBreakfast = true;
+if (!stayedUpLate && !tooMuchGaming && !skippedBreakfast) {
+    console.log("A healthy lifestyle");
+} else {
+    console.log("Not very healthy");
+}
+
+// if (null || 2 || undefined) {
+//     alert("Two should be true");
+// }
+
+
+let location = null;
+let geoLocation;
+console.log(geoLocation ?? "Not a valid geo location");
+let newLocation = location ?? "Arizona";
+console.log(newLocation);
+
+for (let i = 0; i < 5; i++) {
+    console.log(parseInt(Math.random() * 100));
+}
+
+for(let i = 10; i > 1; i--) {
+	console.log(`This has happened ${i} times`);
+}
+
+for(let i = 5; i <= 13; i+=2) {
+    console.log(i);
+}
+
+for(let i = 1; i < 14; i++) {
+    if (i == 5 || i == 7 || i == 9 || i == 11 || i == 13) {
+        console.log(i);
+    }
+}
+
+for(let i = 5; i < 12; i++) {
+    console.log("increment " + i);
+}
+
+for(let i = 0; i < 9; i++) {
+    console.log("this is nice");
+}
+
+for(let i = 11; i >= 1; i-=2) {
+    console.log(i);
+}
+
+
+let i = 0;
+while(i < 3) { //shows 0, then 1, then 2
+	console.log(i);
+    i++;
+}
