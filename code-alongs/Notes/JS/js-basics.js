@@ -177,7 +177,6 @@ switch (login) {
         message = "";
 }
 console.log(message);
-*/
 
 
 let pen = true;
@@ -244,3 +243,30 @@ while(i < 3) { //shows 0, then 1, then 2
 	console.log(i);
     i++;
 }
+*/
+
+let i = 0;
+do {
+	console.log(i);
+	i++;
+} while (i < 3);
+
+let classes = 12;
+for(let i = 0; i < classes; i++){
+    if(i==7){
+        console.log("The Next Frontier");
+        continue;
+    }
+    console.log(i);
+    console.log("This should always print");
+}
+
+// outer: for (let i = 0; i < 3; i++) {
+//     for (let j = 0; j < 5; j++) {
+//         let input = prompt("What is your name");
+//         if (input.length > 0) {
+//             break outer;
+//         }
+//     }
+// }
+
