@@ -243,7 +243,6 @@ while(i < 3) { //shows 0, then 1, then 2
 	console.log(i);
     i++;
 }
-*/
 
 let i = 0;
 do {
@@ -269,4 +268,67 @@ for(let i = 0; i < classes; i++){
 //         }
 //     }
 // }
+*/
 
+let ages = [5,12,18,21,58];
+console.log(ages[4]);
+console.log(ages[5]);
+for (let i = 0; i < ages.length; i++) {
+    console.log(ages[i]);
+}
+
+let colors = ["red", "green", "orange", "yellow", "blue"];
+colors[4] = "purple";
+console.log(colors);
+colors.push("salmon");
+console.log(colors);
+colors.push("seafoam green");
+console.log(colors);
+colors.pop();
+console.log(colors);
+colors.shift();
+console.log(colors);
+colors.unshift("crimson","forest","lavender");
+console.log(colors);
+
+for(let a of colors) {
+    a += " - Solid";
+    console.log(a);
+}
+
+
+//Step 1
+let music = ["jazz", "blues"];
+//Step 2
+music.push("R&B");
+//Step 3
+if (music.length % 2 !== 0) {
+    const middleIndex = Math.floor(music.length / 2);
+    music[middleIndex] = "none";
+}
+//Step 4
+const middleIndex = Math.floor(music.length / 2);
+music.splice(1, 0, "classic");
+//Step 5
+music.unshift("rap","acapella");
+//Output
+console.log(music);
+
+//Spread Operator ...
+let b = ["Phineas", "Ferb", "Perry", "Doofenshmirtz", "Isabella", "Candace"];
+let c = ["Jake", "Finn", "LSP", "Marceline", "Princess Bubblegum", "Lemonheads"];
+let e = ["BMO", "The Lich", "Flame Princess", ...c];
+console.log(e);
+let f = [...b, ...c];
+console.log(f);
+
+let words = "Who would stop talking first Rohan Monte or Justin";
+let newWords = words.split("i");
+console.log(newWords[2]);
+
+
+// let box1 = [1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31]; 
+// let box2 = [2,3,6,7,10,11,14,15,18,19,22,23,26,27,30,31];
+// let box3 = [4,5,6,7,12,13,14,15,20,21,22,23,28,29,30,31];
+// let box4 = [8,9,10,11,12,13,14,15,24,25,26,27,28,29,30,31];
+// let box5 = [16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
