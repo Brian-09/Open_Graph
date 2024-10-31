@@ -322,10 +322,24 @@ console.log(e);
 let f = [...b, ...c];
 console.log(f);
 
-let words = "Who would stop talking first Rohan Monte or Justin";
-let newWords = words.split("i");
-console.log(newWords[2]);
+let words = "Who would stop talking first Rohan Monte or Justin Case. The real problem is always those weird meat like people with feet and more opinions than needed.";
+// let newWords = words.split("i");
+// console.log(newWords[2]);
+// console.log(typeof newWords);
+// let g = newWords.join(" ");
+// console.log(g);
 
+let wordArray = words.split(" ");
+for (let i = 0; i < wordArray.length; i++) {
+    if (wordArray[i] == "first") {
+        wordArray[i] = "ever";
+    }
+    if (wordArray[i] == "feet") {
+        wordArray[i] = "pain";
+    }
+}
+let betterWords = wordArray.join("-");
+console.log(betterWords);
 
 // let box1 = [1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31]; 
 // let box2 = [2,3,6,7,10,11,14,15,18,19,22,23,26,27,30,31];
