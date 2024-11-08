@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/classList.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="lists" class="first second third">
+        <h1>This is a test zone</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quod non a et ipsum minima unde sunt natus recusandae sapiente!</p>
+        <button onclick="toggle()">Toggle</button>
+        <button onclick="add()">Add</button>
+    </div>
+    <script>
+        const list = document.getElementById("lists").classList;
+        console.log(list);
+        function toggle() {
+            list.toggle("first");
+        }
+        function add() {
+            list.add("fourth");
+        }
+
+        console.log(list.contains("Bruce"));
+    </script>
+</body>
+</html>

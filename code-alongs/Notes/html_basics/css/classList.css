@@ -1,0 +1,23 @@
+.first {
+    background-color: purple;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gold;
+}
+
+.second {
+    background-color: black;
+    text-decoration: underline;
+    color: orange;
+}
+
+.third {
+    background-color: lime;
+    color: blue;
+    font-size: 300%;
+}
+
+.fourth {
+    background-color: maroon;
+    color: skyblue;
+    text-decoration: dashed overline;
+}
