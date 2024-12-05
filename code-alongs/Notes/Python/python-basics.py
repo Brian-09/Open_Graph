@@ -194,3 +194,33 @@ for x in favGames:
 for thing in food:
     print("I am the king") # Prints "I am the king" once for every item in the food list
 
+for x in "Hello":
+    print(x)
+y=2
+for x in "four":
+    y==2
+    print(y)
+
+# While loops
+contacts = []
+index = 2
+while index <= 10:
+    print(index)
+    index += 2
+
+# Functions
+'''A function is a block of code which olny runs when it is called. You can pass data known as parameters into a function. A function can return data as a result, but is not mandatory'''
+contacts = []
+def pretty_print(name, direction):
+    print("-----***" + name + "***-----")
+    contacts.append(name)
+    if(direction[0].upper() == 'N'):
+        return "Have fun with the snow"
+    elif(direction[0].upper() == 'S'):
+        print("The Hot South needs fans")
+    elif(direction[0].upper() == 'E'):
+        print(Has the best pizza)
+    else:
+        print("Either from the west or somewhere else. Either way, you suck")
+
+    pretty_print("Bernard", "North")

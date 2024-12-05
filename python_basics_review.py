@@ -1,0 +1,5 @@
+string = input("Enter a string: ")
+print("Uppercase: " + string.upper())
+print("Lowercase: " + string.lower())
+print("Reverse: " + string[::-1])
+print("Vowel Replacement: " + )
