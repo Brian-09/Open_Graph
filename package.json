@@ -1,0 +1,12 @@
+{
+  "name": "open_graph",
+  "version": "1.0.0",
+  "main": "fizzbuzz.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Brian.Verdugo <bverdu247@west-mec.org> (https://github.com/Brian-09)",
+  "license": "MIT",
+  "description": ""
+}
